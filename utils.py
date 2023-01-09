@@ -8,9 +8,24 @@ import torchvision.transforms.functional as FT
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Label map
-# voc_labels = ('aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable',
-              # 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor')
-voc_labels = ('laptop', 'person', 'lights', 'drinks' , 'projector')
+voc_labels = ('airconditioner', 'air cooler', 'airplane', 'apple', 'aquatic bird', 'backpack', 'bag', 'ball', 'banana', 'bathtub', 
+              'beans', 'bear', 'bed', 'bench', 'bicycle', 'bird', 'blender', 'boat', 'books', 'bottle',
+              'bowl', 'broccoli', 'broom', 'bucket', 'buffalo', 'burger', 'bus', 'butterfly', 'cake', 'calculator',
+              'camel', 'camera', 'capsicum', 'car', 'carrot', 'cat', 'cauliflower', 'cellphone', 'chair', 'chandelier', 
+              'clock', 'cockroach', 'comb', 'couch', 'cow', 'crab', 'crocodile', 'cup', 'deer', 'desk', 
+              'dining table', 'dog' , 'dolphin', 'donut', 'door', 'drangfly', 'elephant', 'eye glasses', 'fan', 'ferry', 
+              'fire hydrant', 'fish', 'flowers', 'fork', 'fried egg', 'fries', 'frisbee', 'frog', 'frying pan', 'giraffe',
+              'goat', 'gorilla', 'grapes', 'hair dryer', 'hammer', 'hat', 'head phones', 'helicopter', 'helmet', 'horse', 
+              'hot dog', 'ice cream', 'ipod', 'kangaroo', 'kayak', 'keyboard', 'keys', 'kite', 'knife', 'ladder', 
+              'lamp', 'laptop', 'lemon', 'lion', 'lobster', 'loofa', 'mango', 'mask', 'mattress', 'mice',
+              'microwave', 'mirror', 'monkey', 'motorbike', 'mouse', 'mushroom', 'onion', 'orange', 'pan', 'parking meter', 
+              'pen', 'penguin', 'Person', 'pie', 'pig', 'pillow', 'pills', 'pineapple', 'pizza', 'plate', 
+              'pomegranate', 'potato', 'potted plant', 'pumpkin', 'rainbow', 'refrigerator', 'remote', 'revolver', 'rooster', 'sandwich', 
+              'school bus', 'schooner', 'scissors', 'scooter', 'screwdriver', 136: 'sheep', 137: 'shoes', 138: 'sink', 139: 'skateboard', 140: 'skyscraper', 
+                       141: 'snake', 142: 'snowboard', 143: 'soap', 144: 'socks', 145: 'spaghetti', 146: 'spider', 147: 'spoon', 148: 'sportsball', 149: 'stapler', 150: 'steering wheel', 
+                       151: 'stove', 152: 'strawberry', 153: 'street sign', 154: 'suitcase', 155: 'sushi', 156: 'table', 157: 'teddy bear', 158: 'tie', 159: 'tiger', 160: 'toaster', 
+                       161: 'toilet seat', 162: 'tomato', 163: 'tooth brush', 164: 'traffic light', 165: 'train', 166: 'tree', 167: 'truck', 168: 'tv_monitor', 169: 'umbrella', 170: 'van', 
+                       171: 'vase', 172: 'video projector', 173: 'wardrobe', 174: 'watch', 175: 'waterfall', 176: 'wheelchair', 177: 'windmill', 178: 'window', 179: 'xerox machine', 180: 'zebra')
 label_map = {k: v + 1 for v, k in enumerate(voc_labels)}
 label_map['background'] = 0
 rev_label_map = {v: k for k, v in label_map.items()}  # Inverse mapping
