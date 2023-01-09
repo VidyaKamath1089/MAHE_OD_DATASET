@@ -31,9 +31,25 @@ label_map['background'] = 0
 rev_label_map = {v: k for k, v in label_map.items()}  # Inverse mapping
 
 # Color map for bounding boxes of detected objects from https://sashat.me/2017/01/11/list-of-20-simple-distinct-colors/
-distinct_colors = ['#e6194b', '#3cb44b', '#ffe119', '#0082c8', '#f58231', '#911eb4', '#46f0f0', '#f032e6',
-                   '#d2f53c', '#fabebe', '#008080', '#000080', '#aa6e28', '#fffac8', '#800000', '#aaffc3', '#808000',
-                   '#ffd8b1', '#e6beff', '#808080', '#FFFFFF']
+distinct_colors = ['#e6194b', '#3cb44b', '#ffe119', '#0082c8', '#f58231', '#911eb4', '#46f0f0', '#f032e6','#d2f53c', '#fabebe', 
+				           '#008080', '#000080', '#aa6e28', '#fffac8', '#800000', '#aaffc3', '#808000', '#ffd8b1', '#e6beff', '#808080', 
+				           '#e6194c', '#3cb44c', '#ffe110', '#0082c9', '#f58232', '#911eb5', '#46f0fa', '#f032e7','#d2f53d', '#fabebf', 
+				           '#008080', '#000080', '#aa6e28', '#fffac8', '#800000', '#aaffc3', '#808000', '#ffd8b1', '#e6beff', '#808080', 
+				           '#e6194d', '#3cb44d', '#ffe111', '#0082c0', '#f58233', '#911eb6', '#46f0fb', '#f032e8','#d2f53e', '#fabeba', 
+				           '#008080', '#000080', '#aa6e28', '#fffac8', '#800000', '#aaffc3', '#808000', '#ffd8b1', '#e6beff', '#808080', 
+				           '#e6194e', '#3cb44e', '#ffe112', '#0082c1', '#f58234', '#911eb7', '#46f0fc', '#f032e9','#d2f53f', '#fabebb', 
+				           '#008080', '#000080', '#aa6e28', '#fffac8', '#800000', '#aaffc3', '#808000', '#ffd8b1', '#e6beff', '#808080', 
+				           '#e6194a', '#3cb44f', '#ffe113', '#0082c2', '#f58235', '#911eb8', '#46f0fd', '#f032e0','#d2f530', '#fabebc', 
+				           '#008080', '#000080', '#aa6e28', '#fffac8', '#800000', '#aaffc3', '#808000', '#ffd8b1', '#e6beff', '#808080', 
+				           '#e6194f', '#3cb44a', '#ffe114', '#0082c3', '#f58236', '#911eb9', '#46f0fe', '#f032ea','#d2f531', '#fabebd', 
+				           '#008080', '#000080', '#aa6e28', '#fffac8', '#800000', '#aaffc3', '#808000', '#ffd8b1', '#e6beff', '#808080', 
+				           '#e61941', '#3cb441', '#ffe115', '#0082c4', '#f58237', '#911eb0', '#46f0ff', '#f032eb','#d2f532', '#fabeb1', 
+				           '#008080', '#000080', '#aa6e28', '#fffac8', '#800000', '#aaffc3', '#808000', '#ffd8b1', '#e6beff', '#808080', 
+				           '#e61942', '#3cb442', '#ffe116', '#0082c5', '#f58238', '#911eb1', '#46f0f1', '#f032ec','#d2f533', '#fabeb2', 
+				           '#008080', '#000080', '#aa6e28', '#fffac8', '#800000', '#aaffc3', '#808000', '#ffd8b1', '#e6beff', '#808080', 
+				           '#e61943', '#3cb443', '#ffe117', '#0082c6', '#f58239', '#911eb2', '#46f0f2', '#f032ed','#d2f534', '#fabeb3', 
+				           '#008080', '#000080', '#aa6e28', '#fffac8', '#800000', '#aaffc3', '#808000', '#ffd8b1', '#e6beff', '#808080', 
+				           '#FFFFFF']
 label_color_map = {k: distinct_colors[i] for i, k in enumerate(label_map.keys())}
 
 
