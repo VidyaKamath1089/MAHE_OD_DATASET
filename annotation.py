@@ -4,7 +4,7 @@ import json
 import xml.etree.ElementTree as ET
 
 
-unique_labels = {1: 'airconditioner', 2: 'air cooler', 3: 'airplane', 4: 'apple', 5: 'aquatic bird', 6: 'backpack', 7: 'bag', 8: 'ball', 9: 'banana', 10: 'bathtub', 
+unique_labels = {0: 'background', 1: 'airconditioner', 2: 'air cooler', 3: 'airplane', 4: 'apple', 5: 'aquatic bird', 6: 'backpack', 7: 'bag', 8: 'ball', 9: 'banana', 10: 'bathtub', 
                        11: 'beans', 12: 'bear', 13: 'bed', 14: 'bench', 15: 'bicycle', 16: 'bird', 17: 'blender', 18: 'boat', 19: 'books', 20: 'bottle',
                        21: 'bowl', 22: 'broccoli', 23: 'broom', 24: 'bucket', 25: 'buffalo', 26: 'burger', 27: 'bus', 28: 'butterfly', 29: 'cake', 30: 'calculator',
                        31: 'camel',32: 'camera', 33: 'capsicum', 34: 'car', 35: 'carrot', 36: 'cat', 37: 'cauliflower', 38: 'cellphone', 39: 'chair', 40: 'chandelier', 
